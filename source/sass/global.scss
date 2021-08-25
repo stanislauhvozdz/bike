@@ -1,0 +1,45 @@
+$ff-primary: "Open Sans", "Arial", sans-serif;
+
+$black: #000000;
+$white: #ffffff;
+$color-accent: #0ad9c6;
+$color-bg-link: #f6f6f6;
+
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 320px;
+
+body {
+  font-family: $ff-primary;
+}
+// - мобильная версия — 320px - 767px;
+// - планшетная версия — 768px - 1023px;
+// - десктопная версия — от 1024px и выше
+
+.container {
+  max-width: 1200px;
+  padding: 0 17px;
+  margin: 0 auto;
+}
+
+._no-scroll {
+  overflow: hidden;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: $black;
+
+  @media (max-width: $desktop) {
+    font-size: 24px;
+    line-height: 41px;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 24px;
+    line-height: 41px;
+  }
+}
