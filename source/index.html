@@ -50,7 +50,7 @@
           <p class="header__descr">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         </div>
         <div class="header__order-form order">
-          <form class="order__form" action="#" >
+          <form class="order__form" action="#">
             <p class="order__descr">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
             <label class="order__field">
               <input type="text" name="nane" placeholder="Введите Ваше Имя" checked>
@@ -89,9 +89,77 @@
         </ul>
       </div>
     </section>
+
+    <section class="bike">
+      <div class="container bike__container">
+        <h2 class="bike__title title">Виды велосипедов</h2>
+        <ul class="bike__list">
+          <li class="bike__item circle">
+            <div class="bike__picture">
+              <img src="img/road-bike.png" alt="Серебристый велосипед с черными колесами">
+            </div>
+            <a href="#" class="bike__link">Дорожный велосипед</a>
+          </li>
+          <li class="bike__item square">
+            <div class="bike__picture">
+              <img src="img/mount-bike.png" alt="Зеленый велосипед с шиповаными шинами">
+            </div>
+            <a href="#" class="bike__link">Горный велосипед</a>
+          </li>
+          <li class="bike__item circle--small">
+            <div class="bike__picture">
+              <img src="img/child-bike.png" alt="Розовый велосипед с корзинкой">
+            </div>
+            <a href="#" class="bike__link">Детский велосипед</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="video">
+      <div class="container video__container">
+        <h2 class="video__title title">Видео про велосипеды</h2>
+        <p class="video__descr">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+        <div class="video__player">
+          <video poster="img/poster.png">
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.webm" type="video/webm">
+          </video>
+          <div class="video__controls">
+            <button class="video__button-play">
+              <svg class="video__play-icon" width="65">
+                <use xlink:href="img/sprite.svg#play"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="page__footer"></footer>
+  <footer class="page__footer footer">
+    <div class="container footer__container">
+      <h2 class="footer__title title">Как нас найти?</h2>
+      <p class="footer__adress">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <div class="footer__image-wrapper">
+        <img src="img/map.png" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19">
+      </div>
+      <div class="footer__link-wrapper">
+        <a class="footer__link" href="mailto:puteshestviemechta@gmail.ru">
+          <svg class="footer__link-icon footer__link-icon--mail" width="26" height="20">
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+          puteshestviemechta@gmail.ru
+        </a>
+        <a class="footer__link" href="tel:+749978468446">
+          <svg class="footer__link-icon footer__link-icon--phone" width="22" height="22">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          +7 (499) -784-684-46
+        </a>
+      </div>
+    </div>
+  </footer>
   <script src="js/script.min.js"></script>
 </body>
 

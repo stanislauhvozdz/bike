@@ -64,7 +64,7 @@
 
 .navigation__item {
   @media (max-width: $desktop) {
-    background-color: $color-bg-link;
+    background-color: $color-bg;
     display: inline-flex;
     width: 100%;
 
@@ -77,6 +77,7 @@
 
 .navagation__link {
   text-decoration: none;
+  cursor: pointer;
 
   @media (min-width: $desktop) {
     color: rgba($color: $white, $alpha: 0.7);
@@ -97,6 +98,7 @@
   }
 
   @media (max-width: $desktop) {
+    width: 100%;
     font-size: 20px;
     font-weight: 400;
     line-height: 140%;

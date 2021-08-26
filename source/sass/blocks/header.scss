@@ -54,10 +54,9 @@
     text-align: center;
   }
 
-  @media (max-width: $tablet) {
-    background: url("../img/bg-bike-mobile.jpg") rgba($black, 0.7) no-repeat center;
-    padding: 94px 0 71px;
-  }
+  // @media (max-width: $tablet) {
+  //   padding: 94px 0 71px;
+  // }
 }
 
 .header__logo-link {
@@ -67,8 +66,6 @@
     left: 25px;
   }
 }
-// .header__logo-icon {
-// }
 
 .header__title {
   font-weight: bold;

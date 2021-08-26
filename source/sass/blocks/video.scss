@@ -1,0 +1,89 @@
+.video {
+  background-color: $dark;
+  margin-bottom: 150px;
+  padding-bottom: 20px;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 2px;
+  }
+}
+
+.video__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(120px);
+
+  @media (max-width: $desktop) {
+    transform: translateY(63px);
+  }
+}
+
+.video__title {
+  color: $white;
+  margin: 0 0 15px;
+}
+
+.video__descr {
+  max-width: 360px;
+  color: rgba($white, 0.7);
+  margin: 0;
+  margin-bottom: 55px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  font-weight: 300;
+  line-height: 28px;
+
+  @media (max-width: $desktop) {
+    max-width: 430px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 50px;
+  }
+}
+
+.video__player {
+  position: relative;
+
+  @media (max-width: $desktop) {
+    width: 68.5%;
+  }
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
+
+  video {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.video__controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video__button-play {
+  border: none;
+  background-color: transparent;
+}
+
+.video__play-icon {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $desktop) {
+    width: 90px;
+    height: 90px;
+  }
+}
