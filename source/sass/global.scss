@@ -5,6 +5,7 @@ $dark: #131314;
 $white: #ffffff;
 $color-accent: #0ad9c6;
 $color-bg: #f6f6f6;
+$color-error: #e20a0a;
 
 $desktop: 1023px;
 $tablet: 767px;
@@ -61,30 +62,41 @@ body {
     z-index: -1;
 
     @media (max-width: $desktop) {
+      border-width: 18px;
       height: 127px;
       width: 127px;
-      top: 100%;
-      left: 0;
+      top: 84%;
+      left: 10%;
       transform: translate(-50%, -75%);
     }
+
+    @media (max-width: $tablet) {
+      left: 14%;
+    }
   }
+}
 
-  &--small {
-    &::after {
-      z-index: -1;
-      width: 95px;
-      height: 95px;
-      border-radius: 100%;
-      border: 17px solid $color-accent;
-      top: 2%;
+.circle-small {
+  &::after {
+    z-index: -1;
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    border: 17px solid $color-accent;
+    top: 2%;
+    right: 4%;
+    transform: translate(50%, -50%);
+
+    @media (max-width: $desktop) {
+      width: 68px;
+      height: 68px;
+      border-width: 11px;
+      top: 4%;
       right: 4%;
-      transform: translate(50%, -50%);
+    }
 
-      @media (max-width: $desktop) {
-        width: 68px;
-        height: 68px;
-        border-width: 11px;
-      }
+    @media (max-width: $tablet) {
+      right: 7%;
     }
   }
 }
@@ -115,4 +127,10 @@ body {
       display: none;
     }
   }
+}
+
+.play {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }

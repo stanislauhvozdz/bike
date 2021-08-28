@@ -4,7 +4,11 @@
   padding-bottom: 20px;
 
   @media (max-width: $desktop) {
-    margin-bottom: 2px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 3px;
   }
 }
 
@@ -17,11 +21,19 @@
   @media (max-width: $desktop) {
     transform: translateY(63px);
   }
+
+  @media (max-width: $tablet) {
+    transform: translateY(78px);
+  }
 }
 
 .video__title {
   color: $white;
-  margin: 0 0 15px;
+  margin: 0 0 19px;
+
+  @media (max-width: $tablet) {
+    margin: 0 0 17px;
+  }
 }
 
 .video__descr {
@@ -61,14 +73,12 @@
   }
 }
 
-.video__controls {
+.video__button-play {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.video__button-play {
   border: none;
   background-color: transparent;
 }
@@ -85,5 +95,10 @@
   @media (max-width: $desktop) {
     width: 90px;
     height: 90px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 70px;
+    height: 70px;
   }
 }

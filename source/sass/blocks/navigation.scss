@@ -51,7 +51,14 @@
     background-color: $white;
     position: absolute;
     transition: all 0.3s ease-in-out;
+
+    &.navigation__list--no-js {
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+    }
   }
+
 
   &.is-active {
     top: 0;
@@ -75,7 +82,7 @@
 }
 
 
-.navagation__link {
+.navigation__link {
   text-decoration: none;
   cursor: pointer;
 

@@ -13,6 +13,10 @@
   @media (max-width: $desktop) {
     margin-bottom: 33px;
   }
+
+  @media (max-width: $tablet) {
+    width: 290px;
+  }
 }
 
 .about-us__list {
@@ -30,7 +34,7 @@
 
   @media (max-width: $tablet) {
     justify-content: center;
-    padding: 0 29px;
+    padding: 0 5px;
   }
 }
 
@@ -58,5 +62,9 @@
 
   @media (max-width: $tablet) {
     font-size: 18px;
+
+    &:not(:first-child) {
+      transform: translateY(-8px);
+    }
   }
 }
