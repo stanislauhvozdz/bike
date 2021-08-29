@@ -55,16 +55,17 @@
           <form class="order__form" action="https://echo.htmlacademy.ru" method="POST">
             <p class="order__descr">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
             <label class="order__field">
-              <input type="text" name="nane" placeholder="Введите Ваше Имя" required min="3">
+              <input type="text" name="nane" placeholder="Введите Ваше Имя" required>
             </label>
             <label class="order__field">
-              <input type="tel" name="phone" placeholder="Введите Ваш номер телефона" required min="7" max="10">
+              <input type="tel" name="phone" placeholder="Введите Ваш номер телефона" required>
             </label>
             <button class="order__button" type="submit">Подобрать велосипед мечты</button>
           </form>
         </div>
       </div>
     </div>
+
   </header>
 
   <main class="page__main">
@@ -96,36 +97,33 @@
       <div class="container bike__container">
         <h2 class="bike__title title">Виды велосипедов</h2>
         <ul class="bike__list">
-          <li class="bike__item circle">
+          <li class="bike__item bike__item--circle">
             <div class="bike__picture">
               <picture>
                 <!-- 1x: 342px; 2x: 684px -->
                 <source srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x" type="image/webp">
-                <source srcset="img/road-bike.png 1x, img/road-bike@2x.png 2x" type="image/png">
                 <img src="img/road-bike.png" srcset="img/road-bike@2x.png 2x"
                   alt="Серебристый велосипед с черными колесами" width="342" height="503">
               </picture>
             </div>
             <a href="#" class="bike__link">Дорожный велосипед</a>
           </li>
-          <li class="bike__item square">
+          <li class="bike__item bike__item--square">
             <div class="bike__picture">
               <picture>
                 <!-- 1x: 342px; 2x: 684px -->
                 <source srcset="img/mount-bike.webp 1x, img/mount-bike@2x.webp 2x" type="image/webp">
-                <source srcset="img/mount-bike.png 1x, img/mount-bike@2x.png 2x" type="image/png">
                 <img src="img/mount-bike.png" srcset="img/mount-bike@2x.png 2x"
                   alt="Зеленый велосипед с шиповаными шинами" width="342" height="566">
               </picture>
             </div>
             <a href="#" class="bike__link">Горный велосипед</a>
           </li>
-          <li class="bike__item circle-small">
+          <li class="bike__item bike__item--circle-small">
             <div class="bike__picture">
               <picture>
                 <!-- 1x: 342px; 2x: 684px -->
                 <source srcset="img/child-bike.webp 1x, img/child-bike@2x.webp 2x" type="image/webp">
-                <source srcset="img/child-bike.png 1x, img/child-bike@2x.png 2x" type="image/png">
                 <img src="img/child-bike.png" srcset="img/child-bike@2x.png 2x" alt="Розовый велосипед с корзинкой"  width="342" height="503">
               </picture>
             </div>
@@ -137,8 +135,8 @@
 
     <section class="video">
       <div class="container video__container">
-        <h2 class="video__title title">Видео про велосипеды</h2>
-        <p class="video__descr">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+        <h2 class="title">Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
         <div class="video__player">
           <video poster="img/poster.png">
             <source src="video/video.mp4" type="video/mp4">
@@ -159,7 +157,7 @@
       <h2 class="footer__title title">Как нас найти?</h2>
       <p class="footer__adress">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <div class="footer__image-wrapper">
-        <img src="img/map.png" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19">
+        <img src="img/map.png" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
       </div>
       <div class="footer__link-wrapper">
         <a class="footer__link" href="mailto:puteshestviemechta@gmail.ru">
@@ -172,12 +170,12 @@
           <svg class="footer__link-icon footer__link-icon--phone" width="22" height="22">
             <use xlink:href="img/sprite.svg#phone"></use>
           </svg>
-          +7 (499) -784-684-46
+          +7(499)-784-684-46
         </a>
       </div>
     </div>
   </footer>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
