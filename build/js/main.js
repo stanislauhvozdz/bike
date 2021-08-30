@@ -1,4 +1,4 @@
-;(function () {
+try {
   // бургер
   let navigationToggle = document.querySelector('.navigation__toggle');
   let navigationList = document.querySelector('.navigation__list');
@@ -13,20 +13,17 @@
     navigationList.classList.toggle('is-active');
     pageBody.classList.toggle('_no-scroll');
   });
-})();
+} catch {};
 
-;(function () {
-  // Видио плеер
-  let buttonPlay = document.querySelector('.video__button-play');
-  let video = document.querySelector('.video__player video')
+let buttonPlay = document.querySelector('.video__button-play');
+let video = document.querySelector('.video__player video')
 
-  buttonPlay.addEventListener('click', () => {
-    if (video.paused) {
-      video.play();
-      buttonPlay.classList.add('play')
-    } else {
-      video.pause();
-      buttonPlay.classList.remove('play')
-    }
-  });
-})();
+buttonPlay.addEventListener('click', () => {
+  if (video.paused) {
+    video.play();
+    buttonPlay.classList.add('play')
+  } else {
+    video.pause();
+    buttonPlay.classList.remove('play')
+  }
+});
