@@ -1,13 +1,22 @@
 .about-us {
   margin-bottom: 111px;
 
-  @media (max-width: $desktop) {
-    margin-bottom: 31px;
+  @media (min-width: $desktop) {
+    margin-bottom: 110px;
   }
+
+  @media (max-width: $desktop) {
+    margin-bottom: 30px;
+  }
+}
+
+.about-us__container.container {
+  max-width: 1250px;
 }
 
 .about-us__title {
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 53px;
 
   @media (max-width: $desktop) {
@@ -25,11 +34,13 @@
   padding: 0 19px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 38px;
+  row-gap: 5px;
+
 
   @media (max-width: $desktop) {
     padding: 0 72px;
-    justify-content: space-around;
   }
 
   @media (max-width: $tablet) {
@@ -41,6 +52,10 @@
 .about-us__item {
   text-align: center;
   margin-bottom: 40px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 35px;
+  }
 }
 
 .about-us__number {
@@ -63,9 +78,10 @@
 
   @media (max-width: $tablet) {
     font-size: 18px;
+    transform: translateY(-8px);
 
-    &:not(:first-child) {
-      transform: translateY(-8px);
+    &--transform {
+      transform: translateY(-1px);
     }
   }
 }

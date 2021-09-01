@@ -1,8 +1,14 @@
 .order__form {
-  max-width: 330px;
+  width: 330px;
 
   @media (max-width: $desktop) {
-    max-width: 321px;
+    width: 42%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $tablet) {
+    width: calc(100% - 32px);
+    margin: 0 auto;
   }
 }
 

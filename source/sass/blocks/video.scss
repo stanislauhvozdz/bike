@@ -1,14 +1,18 @@
 .video {
   background-color: $dark;
+  // margin-bottom: 93px;
   margin-bottom: 150px;
   padding-bottom: 20px;
 
   @media (max-width: $desktop) {
     margin-bottom: 0;
+    background: linear-gradient(to bottom, $dark 89%, $white 89%);
   }
 
   @media (max-width: $tablet) {
     margin-bottom: 3px;
+    background-color: $dark;
+    padding-bottom: 77px;
   }
 }
 
