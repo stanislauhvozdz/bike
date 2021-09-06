@@ -66,15 +66,15 @@
     }
   }
 
+  &:focus-within {
+    box-shadow: -10px -5px 21px 1px $color-accent;
+  }
+
   &::before,
   &::after {
     box-sizing: border-box;
     position: absolute;
     content: "";
-  }
-
-  &:focus-within {
-    box-shadow: -10px -5px 21px 1px $color-accent;
   }
 
   &--circle {
@@ -100,6 +100,10 @@
       }
 
       @media (max-width: $tablet) {
+        left: 0%;
+      }
+
+      @media (max-width: 400px) {
         left: 14%;
       }
     }
@@ -125,6 +129,10 @@
       }
 
       @media (max-width: $tablet) {
+        right: -4%;
+      }
+
+      @media (max-width: 400px) {
         right: 7%;
       }
     }
@@ -171,12 +179,15 @@
   }
 
   @media (max-width: $tablet) {
-    flex-basis: 100%;
+    // flex-basis: 100%;
+    flex-basis: 65%;
+    margin: 0 auto;
     margin-bottom: 45px;
   }
 }
 
 .bike__picture {
+  position: relative;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 17px;
@@ -189,8 +200,16 @@
     object-fit: cover;
   }
 
+  &--child {
+    img {
+      object-position: bottom;
+    }
+  }
+
   @media (max-width: $desktop) {
-    height: 300px;
+    // height: 300px;
+    height: auto;
+    aspect-ratio: 9 / 10;
     margin-bottom: 20px;
   }
 
@@ -205,8 +224,8 @@
   text-overflow: ellipsis;
   display: inline-block;
   vertical-align: middle;
-  white-space: nowrap;
-  overflow: hidden;
+  // white-space: nowrap;
+  // overflow: hidden;
   width: 270px;
   font-weight: 600;
   font-size: 22px;

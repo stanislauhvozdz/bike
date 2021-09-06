@@ -116,8 +116,6 @@
   }
 
   &:not(:last-child) {
-    margin-right: 73px;
-
     @media (max-width: $tablet) {
       margin: 0 auto 6px;
     }

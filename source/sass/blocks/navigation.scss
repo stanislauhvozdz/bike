@@ -37,8 +37,10 @@
 
   @media (min-width: $desktop) {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 21% 33% 37% 9%;
     align-items: center;
     padding: 21px 20px 9px;
     border-bottom: 1px solid rgba($color: $white, $alpha: 0.2);
@@ -75,9 +77,9 @@
 }
 
 .navigation__item {
-  &:not(:last-child) {
-    margin-right: 16.2%;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 16.2%;
+  // }
 
   @media (max-width: $desktop) {
     background-color: $color-bg;
